@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌦️ Advanced Weather App</h1>
+    <h4>by Bikram</h4>
+
+    <div class="top-controls">
+      <label class="toggle">
+        <input type="checkbox" id="themeToggle" />
+        <span>🌙 Dark Mode</span>
+      </label>
+
+      <label class="toggle">
+        <input type="checkbox" id="unitToggle" />
+        <span>°C / °F</span>
+      </label>
+    </div>
+
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <button id="currentLocationBtn">📍 Use My Location</button>
+
+    <div id="weatherBox" class="hidden">
+      <h2 id="cityName"></h2>
+      <div class="main-weather">
+        <img id="weatherIcon" src="" alt="Weather Icon" class="animated-icon">
+        <div>
+          <p id="description"></p>
+          <p><strong>Feels Like:</strong> <span id="feelsLike"></span>°</p>
+        </div>
+      </div>
+      <div class="details">
+        <p><img src="https://cdn-icons-png.flaticon.com/128/481/481155.png" /> <strong>Temp:</strong> <span id="temperature"></span>°</p>
+        <p><img src="https://cdn-icons-png.flaticon.com/128/728/728093.png" /> <strong>Humidity:</strong> <span id="humidity"></span>%</p>
+        <p><img src="https://cdn-icons-png.flaticon.com/128/616/616408.png" /> <strong>Wind:</strong> <span id="wind"></span> km/h</p>
+      </div>
+    </div>
+
+    <div id="forecast" class="hidden">
+      <h3>📅 7-Day Forecast</h3>
+      <div id="forecastContainer" class="forecast-container"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
