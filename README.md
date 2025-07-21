@@ -1,5 +1,5 @@
 <b><u>🌦️Weather App</u></b><br/>
-A modern weather forecast application whcih is built with HTML, CSS, and JavaScript using the OpenWeatherMap API. Just enter a city name and get real-time weather details with intuitive UI/UX.
+A modern weather forecast application which is built with HTML, CSS, and JavaScript using the Open-Meteo API. Just enter a city name and get real-time weather details with intuitive UI/UX.
 <hr/>
 
 <b><u>🔥Features</u></b><br/>
